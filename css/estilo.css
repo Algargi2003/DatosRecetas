@@ -1,0 +1,105 @@
+.c-boton{
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: #298DFF;
+}
+
+.barra-quieta{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #669999;
+    /* width: 103vw; */
+}
+.search{
+    height: 33px;
+    width: 33px;
+    margin-left: 10px;
+}
+body{
+    background-color: #e0ebeb;
+}
+html,body{
+    min-width: 100%;
+}
+.icono-reloj{
+    height: 20px;
+    width: 20px;
+}
+.texto-reloj{
+    color: #298DFF;
+}
+.l-horizontal{
+    flex-direction: row;
+}
+.ancho-comensales{
+    width: 40px;
+}
+.prueba{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.boton-fondo{
+    bottom: 0;
+}
+.prueba-columna{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.sin-bordes{
+    border: none;
+
+    height: 100%;
+}
+
+.columna-doble{
+    max-width: 1200px;
+    margin-left: 0;
+    display:grid;
+    grid-template-columns: repeat(6, 1fr); 
+    margin: auto;
+
+}
+.micol{
+    padding:10px;
+    box-sizing: border-box;
+   
+}
+.micol .card-img-top{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px)  {
+    #busqueda{
+        width: 90px;
+    }
+    .columna-doble{
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width:320px)  { 
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    /* .todo{
+        width: 400px;
+    } */
+     }
+    @media (min-width:480px)  { 
+    /* smartphones, Android phones, landscape iPhone */ 
+    }
+    @media (min-width:600px)  { 
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    }
+    @media (min-width:801px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    }
+    @media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+    }
+    @media (min-width:1281px) { 
+    /* hi-res laptops and desktops */ 
+    }
