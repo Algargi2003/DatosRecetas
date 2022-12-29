@@ -314,28 +314,6 @@
           "info": "Lo vertemos en el molde, lo cubrimos con film y a la nevera unas 6 horas aprox."
         }
       ]
-    },
-    {
-      "id": 7,
-      "nombreBuscar": "sdfsf",
-      "nombre": "sdfsf",
-      "descripcion": "",
-      "tipo": "sdfsf",
-      "tiempoPreparacion": 22,
-      "personas": 11,
-      "ingredientes": [
-        {
-          "info": "ewf"
-        },
-        {
-          "info": "dfsfw"
-        }
-      ],
-      "instrucciones": [
-        {
-          "info": "feww"
-        }
-      ]
     }
   ]
 }
