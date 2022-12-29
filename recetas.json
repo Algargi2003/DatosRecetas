@@ -314,6 +314,25 @@
           "info": "Lo vertemos en el molde, lo cubrimos con film y a la nevera unas 6 horas aprox."
         }
       ]
+    },
+    {
+      "id": 7,
+      "nombreBuscar": "ergeg",
+      "nombre": "refgd",
+      "descripcion": "",
+      "tipo": "ergeg",
+      "tiempoPreparacion": 23,
+      "personas": 3,
+      "ingredientes": [
+        {
+          "info": "23231defw"
+        }
+      ],
+      "instrucciones": [
+        {
+          "info": "wfef"
+        }
+      ]
     }
   ]
 }
