@@ -32,9 +32,8 @@ function previos(){
     let texto;
     texto = `
       <div class=" d-flex flex-column w-50">
-      <input id="idReceta" type="number" placeholder="Id numerico, preguntar Alvaro">
       <input id="nombreReceta" type="text" placeholder="Nombre">
-      <input id="nombreRecetaBuscar" type="text" placeholder="Nombre imagen">
+      <input id="nombreRecetaBuscar" type="text" placeholder="Nombre imagen, en minuscula y todo junto">
       <input id="tipoReceta" type="text" placeholder="Tipo">
       <input id="tiempoCocinaReceta" type="text" placeholder="Tiempo cocina">
       <input id="personasReceta" type="text" placeholder="Personas">
@@ -57,7 +56,6 @@ function previos(){
   }
   
   function obtenDatos(){
-    let id = document.getElementById("idReceta");
     let nombreReceta = document.getElementById("nombreReceta");
     let nombreABuscar = document.getElementById("nombreRecetaBuscar");
     let tipoReceta= document.getElementById("tipoReceta");
@@ -85,7 +83,7 @@ function previos(){
       // console.log();
       // console.log(arrayIngredientesFinal);
       // console.log(arrayPasosFinal);
-      anyadirReceta(id.value, nombreABuscar.value, nombreReceta.value, tipoReceta.value, tiempoCocin.value, personas.value, arrayIngredientesFinal, arrayPasosFinal);
+      anyadirReceta(nombreABuscar.value, nombreReceta.value, tipoReceta.value, tiempoCocin.value, personas.value, arrayIngredientesFinal, arrayPasosFinal);
       previos();
     });
   }
@@ -104,13 +102,13 @@ function previos(){
   //   // console.log(ultimoArray);
   // }
   
-  function anyadirReceta(idBusqueda, nombreBusqueda, nombreCompleto, tipo, tiempoPreparacion, personas,ingredientes=[], preparacion=[]) {
+  function anyadirReceta(nombreBusqueda, nombreCompleto, tipo, tiempoPreparacion, personas,ingredientes=[], preparacion=[]) {
     
     return new Promise(function(resolve, reject){
         let xhr = new XMLHttpRequest();
         xhr.open("POST", "http://localhost:3000/recetas/");
         
-        if (idBusqueda == "" || nombreBusqueda == "" ||nombreCompleto == "" ||tipo == "" ||tiempoPreparacion == null || personas == null || ingredientes == null|| preparacion == null ) {
+        if (nombreBusqueda == "" ||nombreCompleto == "" ||tipo == "" ||tiempoPreparacion == null || personas == null || ingredientes == null|| preparacion == null ) {
             alert("Introduce todos los campos");
         } else {
           let ultimoIngredientes = [];
@@ -123,7 +121,6 @@ function previos(){
           });
           // ultimoIngredientes.forEach(i =>console.log(i));
             let miPost = {
-                id: parseInt(idBusqueda),
                 nombreBuscar: nombreBusqueda,
                 nombre: nombreCompleto,
                 descripcion: "",

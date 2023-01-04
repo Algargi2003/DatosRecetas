@@ -314,6 +314,31 @@
           "info": "Lo vertemos en el molde, lo cubrimos con film y a la nevera unas 6 horas aprox."
         }
       ]
+    },
+    {
+      "nombreBuscar": "pancontomate",
+      "nombre": "Pan con tomate",
+      "descripcion": "",
+      "tipo": "salado",
+      "tiempoPreparacion": 5,
+      "personas": 4,
+      "ingredientes": [
+        {
+          "info": "Pan integral: 1 barra"
+        },
+        {
+          "info": "Tomate: 100gr"
+        }
+      ],
+      "instrucciones": [
+        {
+          "info": "Cortamos el pan"
+        },
+        {
+          "info": "Echamos el tomate"
+        }
+      ],
+      "id": 7
     }
   ]
 }
